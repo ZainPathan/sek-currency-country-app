@@ -1,6 +1,6 @@
-# Swedish Krona SEK Currency Convertor
+# Swedish Krona SEK Currency Converter
 
-* Swedish Krona SEK Currency Convertor was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Swedish Krona SEK Currency Converter was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 * It uses React, Redux, Redux Thunk as middleware and React Material as a UI Component library
 * For Countries Search the following API is used [REST Countries](https://restcountries.eu)
   * https://restcountries.eu/rest/v2/name/{name}
