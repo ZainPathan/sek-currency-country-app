@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconComponent tests renders properly 1`] = `
+<span
+  aria-hidden={true}
+  className="material-icons MuiIcon-root"
+>
+  <img
+    alt=""
+    className="makeStyles-flag-1"
+    src="https://restcountries.eu/data/bel.svg"
+  />
+</span>
+`;
