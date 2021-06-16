@@ -13,11 +13,15 @@ import useCountryDetailsSectionStyle from './CountryDetailsSection.style';
 import { labels } from '../../../core/constants';
 import { GetAmountInCurrency } from '../../../core/utils';
 
-const CountryDetailSection = (props) => {
-    const classes = useCountryDetailsSectionStyle();
+interface CountryDetailSectionProps {
+    countriesList: any,
+    currMap: object,
+    currencyAmountInSEK: number,
+    loadingState: string
+}
 
-    // console.log('props.currMap: ', props.currMap);
-    // console.log('props.currencyAmountInSEK: ', props.currencyAmountInSEK);
+const CountryDetailSection: React.FC<CountryDetailSectionProps> = (props) => {
+    const classes = useCountryDetailsSectionStyle();
 
     return (
         <>

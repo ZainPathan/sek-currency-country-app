@@ -38,7 +38,7 @@ describe('CountryDetailsSection component tests', () => {
         "XPF": 119.884226
     };
     const mockCurrencyAmountInSEK = 100;
-    const loadingState = false;
+    const loadingState = 'LOADED';
 
     const mockCurrMap = Object.keys(currencyRatesMap).reduce((result, curr) => {
         result[curr] = currencyRatesMap[curr]/currencyRatesMap['SEK'];

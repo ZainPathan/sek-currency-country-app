@@ -3,7 +3,11 @@ import { Backdrop, CircularProgress } from '@material-ui/core';
 
 import useLoaderStyles from './Loader.style';
 
-const Loader = ({showLoader}) => {
+interface LoaderProps {
+    showLoader: boolean
+}
+
+const Loader: React.FC<LoaderProps> = ({showLoader}) => {
     const classes = useLoaderStyles();
 
     return (

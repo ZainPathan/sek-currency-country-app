@@ -2,7 +2,15 @@ import React from 'react';
 import { Button, TextField } from '@material-ui/core';
 import useInputTextButtonComboStyles from './InputTextButtonCombo.style';
 
-const InputTextButtonCombo = (props) => {
+interface InputTextButtonComboProps {
+    inputPlaceholder: string,
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+    buttonLabel: string,
+    onClick: () => void,
+    disabled?: boolean
+}
+
+const InputTextButtonCombo: React.FC<InputTextButtonComboProps> = (props) => {
     const classes = useInputTextButtonComboStyles();
 
     return (

@@ -7,9 +7,13 @@ const useStyles = makeStyles({
         width: 80,
         height: 50
     }
-})
+});
 
-export default function IconComponent({src}) {
+interface IconComponentProps {
+    src: string
+}
+
+const IconComponent: React.FC<IconComponentProps> = ({src}) => {
     const classes = useStyles();
 
     return (
@@ -18,3 +22,5 @@ export default function IconComponent({src}) {
         </Icon>
     )
 };
+
+export default IconComponent;

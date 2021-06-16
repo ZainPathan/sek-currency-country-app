@@ -37,7 +37,6 @@ export const getCurrencyRates = (currenciesList: Array<string>) => (
     dispatch(getCurrencyRatesRequestStart());
     dispatch(get(GET_CURRENCY_RATES_URL(currenciesList)))
         .then((result: any) => {
-            console.log('result: ', result);
             dispatch(getCurrencyRatesRequestSuccess(result.data));
         })
         .catch((error: any) => {

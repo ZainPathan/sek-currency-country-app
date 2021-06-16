@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IconComponent tests renders properly 1`] = `
+exports[`IconComponent tests snapshot test 1`] = `
 <span
   aria-hidden={true}
   className="material-icons MuiIcon-root"

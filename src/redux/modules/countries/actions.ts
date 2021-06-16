@@ -28,7 +28,7 @@ export const searchCountries = (countrySearchText: string) => (
     dispatch(searchCountryRequestStart());
     dispatch(resetCurrencyRates());
 
-    dispatch(get(SEARCH_COUNTRY_URL(countrySearchText))). then((response: any) => {
+    dispatch(get(SEARCH_COUNTRY_URL(countrySearchText))).then((response: any) => {
         dispatch(searchCountryRequestSuccess(response.data));
     }).catch((error: any) => {
         dispatch(searchCountryRequestFail());

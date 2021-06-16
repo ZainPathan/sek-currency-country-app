@@ -16,7 +16,7 @@ describe('InputTextButtonCombo tests', () => {
             .create(
                 <InputTextButtonCombo
                     inputPlaceholder={inputPlaceholder}
-                    buttonText={buttonLabel}
+                    buttonLabel={buttonLabel}
                     onChange={onChange}
                     onClick={onClick}
                 />
@@ -30,7 +30,7 @@ describe('InputTextButtonCombo tests', () => {
         const { getAllByText } = render(
             <InputTextButtonCombo
                 inputPlaceholder={inputPlaceholderText}
-                buttonText={buttonLabel}
+                buttonLabel={buttonLabel}
                 onChange={onChange}
                 onClick={onClick}
             />
@@ -42,12 +42,12 @@ describe('InputTextButtonCombo tests', () => {
         const { getByRole } = render(
             <InputTextButtonCombo
                 inputPlaceholder={inputPlaceholder}
-                buttonText={buttonLabel}
+                buttonLabel={buttonLabel}
                 onChange={onChange}
                 onClick={onClick}
             />
         );
         fireEvent.click(getByRole('button'));
         expect(onClick).toHaveBeenCalled();
-    })
-})
+    });
+});
